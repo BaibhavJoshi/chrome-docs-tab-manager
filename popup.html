@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./popup.css">
+
+</head>
+
+<body>
+
+    <!--
+
+        > This template element is truly a template. It is hidden, and does not get rendered.
+
+        > I guess we could have also used the standard document.createElement() function to create each item, but this was a cool new way.
+
+        > In our popup.js file, we use it's direct child, the <li> node as a blueprint to create as many clones as is required.
+
+        > Each <li> clone is a tangible entry that we will be able to display through the popup UI.
+
+        > Once we have created all the individual elements, we append them to the <ul> at the end of this file.
+
+    -->
+    
+    <template id="li_template">
+        <li>
+            <a>
+                <h3 class="title">Tab Title</h3>
+                <p class="pathname">Tab Pathname</p>
+            </a>
+        </li>
+    </template>
+
+    <h1>Google Dev Docs</h1>
+    <button>Group Tabs</button>
+    <ul></ul>
+
+    <script src="./popup.js" type="module"></script>
+
+</body>
+</html>
